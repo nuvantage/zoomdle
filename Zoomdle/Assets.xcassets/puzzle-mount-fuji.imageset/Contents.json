@@ -1,0 +1,12 @@
+﻿{
+  "images" : [
+    {
+      "filename" : "puzzle-mount-fuji.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -4,6 +4,8 @@ import Foundation
 protocol PuzzleProgressStoring {
     func progress(for puzzleID: String) -> PuzzleProgress?
     func save(_ progress: PuzzleProgress)
+    func delete(puzzleID: String)
+    func allProgress() -> [String: PuzzleProgress]
 }
 
 @MainActor
@@ -23,14 +25,24 @@ final class UserDefaultsPuzzleProgressStore: PuzzleProgressStoring {
     func save(_ progress: PuzzleProgress) {
         var stored = allProgress()
         stored[progress.puzzleID] = progress
+        write(stored)
+    }
+
+    func delete(puzzleID: String) {
+        var stored = allProgress()
+        stored.removeValue(forKey: puzzleID)
+        write(stored)
+    }
+
+    func allProgress() -> [String: PuzzleProgress] {
+        guard let data = defaults.data(forKey: key) else { return [:] }
+        return (try? JSONDecoder().decode([String: PuzzleProgress].self, from: data)) ?? [:]
+    }
+
+    private func write(_ stored: [String: PuzzleProgress]) {
         if let data = try? JSONEncoder().encode(stored) {
             defaults.set(data, forKey: key)
         }
-    }
-
-    private func allProgress() -> [String: PuzzleProgress] {
-        guard let data = defaults.data(forKey: key) else { return [:] }
-        return (try? JSONDecoder().decode([String: PuzzleProgress].self, from: data)) ?? [:]
     }
 }
 
@@ -44,5 +56,13 @@ final class InMemoryPuzzleProgressStore: PuzzleProgressStoring {
 
     func save(_ progress: PuzzleProgress) {
         storage[progress.puzzleID] = progress
+    }
+
+    func delete(puzzleID: String) {
+        storage.removeValue(forKey: puzzleID)
+    }
+
+    func allProgress() -> [String: PuzzleProgress] {
+        storage
     }
 }

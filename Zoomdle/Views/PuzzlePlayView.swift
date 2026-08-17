@@ -29,13 +29,26 @@ struct PuzzlePlayView: View {
         .task {
             await viewModel.load()
         }
+        .sensoryFeedback(.impact(weight: .medium), trigger: viewModel.submitPulse)
+        .sensoryFeedback(.success, trigger: viewModel.successPulse)
+        .sensoryFeedback(.error, trigger: viewModel.errorPulse)
+        .sensoryFeedback(.warning, trigger: viewModel.duplicatePulse)
+        .onChange(of: viewModel.isAnimatingFinalReveal) { _, isAnimating in
+            guard isAnimating else { return }
+            Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(700))
+                withAnimation(.easeInOut(duration: 0.25)) {
+                    viewModel.endFinalReveal()
+                }
+            }
+        }
     }
 
     @ViewBuilder
     private func puzzleContent(_ puzzle: Puzzle) -> some View {
         ScrollView {
             VStack(spacing: 20) {
-                if viewModel.isComplete {
+                if viewModel.showsResults {
                     ResultsView(
                         puzzle: puzzle,
                         outcome: viewModel.outcome,
@@ -52,15 +65,19 @@ struct PuzzlePlayView: View {
                         .foregroundStyle(.secondary)
                         .tracking(1)
 
-                    guessMeter(for: puzzle)
+                    if showsGuessChrome {
+                        guessMeter(for: puzzle)
 
-                    GuessInputView(
-                        text: $viewModel.guessText,
-                        suggestions: viewModel.suggestions,
-                        isSubmitEnabled: viewModel.canSubmit,
-                        onSelectSuggestion: viewModel.applySuggestion,
-                        onSubmit: viewModel.submitGuess
-                    )
+                        GuessInputView(
+                            text: $viewModel.guessText,
+                            suggestions: viewModel.suggestions,
+                            isSubmitEnabled: viewModel.canSubmit,
+                            missPulse: viewModel.missPulse,
+                            dismissKeyboardPulse: viewModel.dismissKeyboardPulse,
+                            onSelectSuggestion: viewModel.applySuggestion,
+                            onSubmit: viewModel.submitGuess
+                        )
+                    }
                 }
 
                 if !viewModel.guesses.isEmpty {
@@ -72,16 +89,25 @@ struct PuzzlePlayView: View {
         .scrollDismissesKeyboard(.interactively)
     }
 
+    private var showsGuessChrome: Bool {
+        !viewModel.isComplete || viewModel.outcome == .failed
+    }
+
     private func guessMeter(for puzzle: Puzzle) -> some View {
-        HStack(spacing: 8) {
-            ForEach(0..<TodayViewModel.maxGuesses, id: \.self) { index in
-                Capsule()
-                    .fill(pipColor(at: index, puzzle: puzzle))
-                    .frame(height: 8)
+        VStack(spacing: 8) {
+            Text("Guess \(viewModel.currentGuessNumber) of \(TodayViewModel.maxGuesses)")
+                .font(.headline)
+
+            HStack(spacing: 8) {
+                ForEach(0..<TodayViewModel.maxGuesses, id: \.self) { index in
+                    Capsule()
+                        .fill(pipColor(at: index, puzzle: puzzle))
+                        .frame(height: 8)
+                }
             }
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Guess \(viewModel.guessesUsed) of \(TodayViewModel.maxGuesses)")
+        .accessibilityLabel("Guess \(viewModel.currentGuessNumber) of \(TodayViewModel.maxGuesses)")
     }
 
     private func guessHistory(for puzzle: Puzzle) -> some View {

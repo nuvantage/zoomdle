@@ -19,7 +19,7 @@ struct ResultsView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            PuzzleAssetImage(imageName: puzzle.imageName, contentMode: .fit)
+            PuzzleAssetImage(puzzle: puzzle, contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 .accessibilityElement()
                 .accessibilityLabel("Fully revealed puzzle image")

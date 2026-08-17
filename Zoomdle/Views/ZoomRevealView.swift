@@ -2,20 +2,27 @@ import SwiftUI
 
 struct ZoomRevealView: View {
     let imageName: String
+    var imageURL: URL? = nil
     let revealLevel: Int
     let puzzleID: String
 
     private let maxRevealLevel = 5
     private let maxZoom: CGFloat = 6
 
-    init(imageName: String, revealLevel: Int, puzzleID: String) {
+    init(imageName: String, imageURL: URL? = nil, revealLevel: Int, puzzleID: String) {
         self.imageName = imageName
+        self.imageURL = imageURL
         self.revealLevel = revealLevel
         self.puzzleID = puzzleID
     }
 
     init(puzzle: Puzzle, revealLevel: Int) {
-        self.init(imageName: puzzle.imageName, revealLevel: revealLevel, puzzleID: puzzle.id)
+        self.init(
+            imageName: puzzle.imageName,
+            imageURL: puzzle.imageURL,
+            revealLevel: revealLevel,
+            puzzleID: puzzle.id
+        )
     }
 
     var body: some View {
@@ -29,7 +36,7 @@ struct ZoomRevealView: View {
                 maxZoom: maxZoom
             )
 
-            PuzzleAssetImage(imageName: imageName, contentMode: .fill)
+            PuzzleAssetImage(imageName: imageName, imageURL: imageURL, contentMode: .fill)
                 .frame(width: side, height: side)
                 .scaleEffect(transform.scale)
                 .offset(transform.offset)

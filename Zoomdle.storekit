@@ -1,0 +1,59 @@
+{
+  "identifier" : "7F3A1C2E-9B84-4D60-A1E2-8C5F0D7B3A91",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "2B8E4F1A-6C93-4E17-BD50-9A1C3E7F2D08",
+      "localizations" : [
+        {
+          "description" : "Unlock every past Zoomdle puzzle.",
+          "displayName" : "Zoomdle Plus",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "Zoomdle Plus",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOfferEligibility" : "stack",
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "5D9C2A70-1E4B-4F88-9C16-A7E3B4D0F512",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Play every past Zoomdle puzzle whenever you like.",
+              "displayName" : "Zoomdle Plus Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.zoomdle.Zoomdle.plus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Plus Monthly",
+          "subscriptionGroupID" : "2B8E4F1A-6C93-4E17-BD50-9A1C3E7F2D08",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

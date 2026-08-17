@@ -42,7 +42,18 @@ struct AppUnavailableView: View {
 
 struct PuzzleAssetImage: View {
     let imageName: String
+    var imageURL: URL? = nil
     var contentMode: ContentMode = .fill
+
+    init(imageName: String, imageURL: URL? = nil, contentMode: ContentMode = .fill) {
+        self.imageName = imageName
+        self.imageURL = imageURL
+        self.contentMode = contentMode
+    }
+
+    init(puzzle: Puzzle, contentMode: ContentMode = .fill) {
+        self.init(imageName: puzzle.imageName, imageURL: puzzle.imageURL, contentMode: contentMode)
+    }
 
     var body: some View {
         Group {
@@ -50,16 +61,31 @@ struct PuzzleAssetImage: View {
                 Image(imageName)
                     .resizable()
                     .aspectRatio(contentMode: contentMode)
-            } else {
-                ZStack {
-                    Color.secondary.opacity(0.12)
-                    Image(systemName: "photo")
-                        .font(.title)
-                        .foregroundStyle(.secondary)
+            } else if let imageURL {
+                AsyncImage(url: imageURL) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: contentMode)
+                    default:
+                        placeholder
+                    }
                 }
+            } else {
+                placeholder
             }
         }
         .accessibilityHidden(true)
+    }
+
+    private var placeholder: some View {
+        ZStack {
+            Color.secondary.opacity(0.12)
+            Image(systemName: "photo")
+                .font(.title)
+                .foregroundStyle(.secondary)
+        }
     }
 
     private static func exists(_ name: String) -> Bool {

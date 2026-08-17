@@ -64,6 +64,10 @@ final class ArchiveViewModel {
         progressStore.progress(for: puzzle.id) != nil
     }
 
+    func hasCompleted(_ puzzle: Puzzle) -> Bool {
+        progressStore.progress(for: puzzle.id)?.isComplete == true
+    }
+
     func isUnlocked(_ puzzle: Puzzle, isSubscribed: Bool) -> Bool {
         isSubscribed || hasProgress(for: puzzle)
     }

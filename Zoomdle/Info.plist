@@ -6,6 +6,14 @@
 	<string>Zoomdle</string>
 	<key>CFBundleName</key>
 	<string>Zoomdle</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSPrivacyPolicyURL</key>
+	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/PrivacyPolicy.md</string>
+	<key>SupportURL</key>
+	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md</string>
+	<key>TermsURL</key>
+	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/Terms.md</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>

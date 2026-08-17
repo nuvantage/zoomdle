@@ -8,6 +8,9 @@ struct ZoomdleApp: App {
         WindowGroup {
             MainTabView()
                 .environment(subscriptionStore)
+                .task {
+                    await subscriptionStore.start()
+                }
         }
     }
 }

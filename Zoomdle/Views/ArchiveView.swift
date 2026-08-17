@@ -49,7 +49,6 @@ struct ArchiveView: View {
         }
         .sheet(item: $lockedPuzzle) { puzzle in
             PaywallView {
-                subscriptionStore.unlock()
                 let puzzleToOpen = puzzle
                 lockedPuzzle = nil
                 Task { @MainActor in
@@ -75,7 +74,7 @@ struct ArchiveView: View {
                                 ArchiveThumbnailView(
                                     puzzle: puzzle,
                                     isLocked: !unlocked,
-                                    isCompleted: viewModel.hasProgress(for: puzzle)
+                                    isCompleted: viewModel.hasCompleted(puzzle)
                                 )
                                 .onTapGesture {
                                     select(puzzle, isUnlocked: unlocked)
@@ -106,10 +105,11 @@ private struct ArchiveThumbnailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             ZStack {
-                PuzzleAssetImage(imageName: puzzle.imageName, contentMode: .fill)
-                    .blur(radius: isLocked ? 20 : 0)
-                    .scaleEffect(isLocked ? 1.15 : 1)
-                    .allowsHitTesting(false)
+                if isCompleted {
+                    PuzzleAssetImage(puzzle: puzzle, contentMode: .fill)
+                } else {
+                    PuzzleAssetImage(imageName: "LaunchLogo", contentMode: .fill)
+                }
 
                 if isLocked {
                     Color.black.opacity(0.4)

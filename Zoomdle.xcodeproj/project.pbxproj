@@ -30,10 +30,18 @@
 		A10000000000000000000063 /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000062 /* SubscriptionStore.swift */; };
 		A10000000000000000000065 /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000064 /* ArchiveViewModel.swift */; };
 		A10000000000000000000071 /* AppStateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000070 /* AppStateViews.swift */; };
+		A10000000000000000000081 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000080 /* GameStats.swift */; };
+		A10000000000000000000083 /* GameStatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000082 /* GameStatsStore.swift */; };
+		A10000000000000000000085 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000084 /* SettingsView.swift */; };
+		A10000000000000000000087 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000086 /* SettingsViewModel.swift */; };
+		A10000000000000000000093 /* LegalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000092 /* LegalLinks.swift */; };
+		A10000000000000000000091 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000090 /* PrivacyInfo.xcprivacy */; };
+		A10000000000000000000103 /* PuzzleAndShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000102 /* PuzzleAndShareTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A10000000000000000000003 /* Zoomdle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomdle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000110 /* Zoomdle.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Zoomdle.storekit; sourceTree = "<group>"; };
+		A10000000000000000000100 /* ZoomdleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomdleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1000000000000000000000B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1000000000000000000000C /* ZoomdleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomdleApp.swift; sourceTree = "<group>"; };
 		A1000000000000000000000D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -58,10 +66,24 @@
 		A10000000000000000000064 /* ArchiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewModel.swift; sourceTree = "<group>"; };
 		A10000000000000000000066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10000000000000000000070 /* AppStateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateViews.swift; sourceTree = "<group>"; };
+		A10000000000000000000080 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
+		A10000000000000000000082 /* GameStatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatsStore.swift; sourceTree = "<group>"; };
+		A10000000000000000000084 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A10000000000000000000086 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000092 /* LegalLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalLinks.swift; sourceTree = "<group>"; };
+		A10000000000000000000090 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A10000000000000000000102 /* PuzzleAndShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleAndShareTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A10000000000000000000017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000106 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				A10000000000000000000006 /* Zoomdle */,
+				A10000000000000000000101 /* ZoomdleTests */,
+				A10000000000000000000110 /* Zoomdle.storekit */,
 				A10000000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A10000000000000000000003 /* Zoomdle.app */,
+				A10000000000000000000100 /* ZoomdleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +123,7 @@
 				A10000000000000000000026 /* Resources */,
 				A1000000000000000000000B /* Assets.xcassets */,
 				A10000000000000000000066 /* Info.plist */,
+				A10000000000000000000090 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Zoomdle;
 			sourceTree = "<group>";
@@ -108,6 +134,8 @@
 				A10000000000000000000020 /* Puzzle.swift */,
 				A10000000000000000000040 /* PuzzleProgress.swift */,
 				A10000000000000000000054 /* ShareResult.swift */,
+				A10000000000000000000080 /* GameStats.swift */,
+				A10000000000000000000092 /* LegalLinks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +152,7 @@
 				A10000000000000000000058 /* PuzzlePlayView.swift */,
 				A10000000000000000000060 /* PaywallView.swift */,
 				A10000000000000000000070 /* AppStateViews.swift */,
+				A10000000000000000000084 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +162,7 @@
 			children = (
 				A10000000000000000000046 /* TodayViewModel.swift */,
 				A10000000000000000000064 /* ArchiveViewModel.swift */,
+				A10000000000000000000086 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -145,6 +175,7 @@
 				A10000000000000000000044 /* WordListService.swift */,
 				A10000000000000000000056 /* StreakStore.swift */,
 				A10000000000000000000062 /* SubscriptionStore.swift */,
+				A10000000000000000000082 /* GameStatsStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -156,6 +187,14 @@
 				A10000000000000000000052 /* words.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000101 /* ZoomdleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000102 /* PuzzleAndShareTests.swift */,
+			);
+			path = ZoomdleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +217,24 @@
 			productReference = A10000000000000000000003 /* Zoomdle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A10000000000000000000104 /* ZoomdleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000010C /* Build configuration list for PBXNativeTarget "ZoomdleTests" */;
+			buildPhases = (
+				A10000000000000000000105 /* Sources */,
+				A10000000000000000000106 /* Frameworks */,
+				A10000000000000000000107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10000000000000000000108 /* PBXTargetDependency */,
+			);
+			name = ZoomdleTests;
+			productName = ZoomdleTests;
+			productReference = A10000000000000000000100 /* ZoomdleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +247,10 @@
 				TargetAttributes = {
 					A10000000000000000000002 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					A10000000000000000000104 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A10000000000000000000002;
 					};
 				};
 			};
@@ -207,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				A10000000000000000000002 /* Zoomdle */,
+				A10000000000000000000104 /* ZoomdleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +281,14 @@
 				A10000000000000000000014 /* Assets.xcassets in Resources */,
 				A10000000000000000000025 /* puzzles.json in Resources */,
 				A10000000000000000000053 /* words.json in Resources */,
+				A10000000000000000000091 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +319,41 @@
 				A10000000000000000000063 /* SubscriptionStore.swift in Sources */,
 				A10000000000000000000065 /* ArchiveViewModel.swift in Sources */,
 				A10000000000000000000071 /* AppStateViews.swift in Sources */,
+				A10000000000000000000081 /* GameStats.swift in Sources */,
+				A10000000000000000000083 /* GameStatsStore.swift in Sources */,
+				A10000000000000000000085 /* SettingsView.swift in Sources */,
+				A10000000000000000000087 /* SettingsViewModel.swift in Sources */,
+				A10000000000000000000093 /* LegalLinks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000103 /* PuzzleAndShareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000000000000000000108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000002 /* Zoomdle */;
+			targetProxy = A10000000000000000000109 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000000000000000000002;
+			remoteInfo = Zoomdle;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin XCBuildConfiguration section */
 		A10000000000000000000018 /* Debug */ = {
@@ -313,7 +414,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STOREKIT_IAP $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -369,6 +470,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "STOREKIT_IAP $(inherited)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -386,6 +488,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zoomdle/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Zoomdle;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -419,6 +522,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zoomdle/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Zoomdle;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -440,6 +544,46 @@
 			};
 			name = Release;
 		};
+		A1000000000000000000010A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomdle.ZoomdleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoomdle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zoomdle";
+			};
+			name = Debug;
+		};
+		A1000000000000000000010B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomdle.ZoomdleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoomdle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zoomdle";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +601,15 @@
 			buildConfigurations = (
 				A10000000000000000000018 /* Debug */,
 				A10000000000000000000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000010C /* Build configuration list for PBXNativeTarget "ZoomdleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000010A /* Debug */,
+				A1000000000000000000010B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

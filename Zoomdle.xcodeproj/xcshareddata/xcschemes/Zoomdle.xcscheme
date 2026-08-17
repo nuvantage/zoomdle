@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Zoomdle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A10000000000000000000104"
+               BuildableName = "ZoomdleTests.xctest"
+               BlueprintName = "ZoomdleTests"
+               ReferencedContainer = "container:Zoomdle.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,19 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A10000000000000000000104"
+               BuildableName = "ZoomdleTests.xctest"
+               BlueprintName = "ZoomdleTests"
+               ReferencedContainer = "container:Zoomdle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -47,9 +74,12 @@
             BuildableName = "Zoomdle.app"
             BlueprintName = "Zoomdle"
             ReferencedContainer = "container:Zoomdle.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-   </LaunchAction>
+            </BuildableReference>
+         </BuildableProductRunnable>
+         <StoreKitConfigurationFileReference
+            identifier = "../Zoomdle.storekit">
+         </StoreKitConfigurationFileReference>
+      </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
@@ -64,9 +94,12 @@
             BuildableName = "Zoomdle.app"
             BlueprintName = "Zoomdle"
             ReferencedContainer = "container:Zoomdle.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-   </ProfileAction>
+            </BuildableReference>
+         </BuildableProductRunnable>
+         <StoreKitConfigurationFileReference
+            identifier = "../Zoomdle.storekit">
+         </StoreKitConfigurationFileReference>
+      </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
    </AnalyzeAction>

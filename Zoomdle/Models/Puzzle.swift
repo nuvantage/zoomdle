@@ -3,7 +3,10 @@ import Foundation
 struct Puzzle: Identifiable, Codable, Hashable, Sendable {
     let id: String
     let date: Date
+    /// Asset catalog name used when `imageURL` is missing or the download fails.
     let imageName: String
+    /// Optional CDN photo. Absent in bundled `puzzles.json`.
+    var imageURL: URL? = nil
     let answer: String
     let acceptableAnswers: [String]
     let category: String
@@ -68,5 +71,21 @@ extension Puzzle {
             return 1
         }
         return max(days + 1, 1)
+    }
+
+    static func makeListDecoder() -> JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            let string = try container.decode(String.self)
+            guard let date = Puzzle.date(fromJSON: string) else {
+                throw DecodingError.dataCorruptedError(
+                    in: container,
+                    debugDescription: "Expected date string in yyyy-MM-dd format, got \(string)."
+                )
+            }
+            return date
+        }
+        return decoder
     }
 }

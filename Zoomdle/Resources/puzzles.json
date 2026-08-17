@@ -1,10 +1,561 @@
 [
   {
+    "id": "2026-10-04",
+    "date": "2026-10-04",
+    "imageName": "puzzle-earth",
+    "answer": "Earth",
+    "acceptableAnswers": [
+      "planet earth",
+      "the earth",
+      "globe"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-10-03",
+    "date": "2026-10-03",
+    "imageName": "puzzle-microscope",
+    "answer": "Microscope",
+    "acceptableAnswers": [
+      "lab microscope",
+      "compound microscope"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-10-02",
+    "date": "2026-10-02",
+    "imageName": "puzzle-hot-dog",
+    "answer": "Hot Dog",
+    "acceptableAnswers": [
+      "hotdog",
+      "frankfurter",
+      "wiener"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-10-01",
+    "date": "2026-10-01",
+    "imageName": "puzzle-koala",
+    "answer": "Koala",
+    "acceptableAnswers": [
+      "koala bear",
+      "koalas"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-30",
+    "date": "2026-09-30",
+    "imageName": "puzzle-sydney-opera-house",
+    "answer": "Sydney Opera House",
+    "acceptableAnswers": [
+      "opera house",
+      "sydney opera",
+      "the opera house"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-29",
+    "date": "2026-09-29",
+    "imageName": "puzzle-sun",
+    "answer": "Sun",
+    "acceptableAnswers": [
+      "the sun",
+      "sol"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-09-28",
+    "date": "2026-09-28",
+    "imageName": "puzzle-accordion",
+    "answer": "Accordion",
+    "acceptableAnswers": [
+      "accordian",
+      "squeeze box"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-27",
+    "date": "2026-09-27",
+    "imageName": "puzzle-avocado",
+    "answer": "Avocado",
+    "acceptableAnswers": [
+      "avocados",
+      "avo"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-26",
+    "date": "2026-09-26",
+    "imageName": "puzzle-dolphin",
+    "answer": "Dolphin",
+    "acceptableAnswers": [
+      "dolphins",
+      "porpoise"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-25",
+    "date": "2026-09-25",
+    "imageName": "puzzle-stonehenge",
+    "answer": "Stonehenge",
+    "acceptableAnswers": [
+      "stone henge",
+      "the stones"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-24",
+    "date": "2026-09-24",
+    "imageName": "puzzle-meteor",
+    "answer": "Meteor",
+    "acceptableAnswers": [
+      "meteorite",
+      "falling star",
+      "fireball"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-09-23",
+    "date": "2026-09-23",
+    "imageName": "puzzle-umbrella",
+    "answer": "Umbrella",
+    "acceptableAnswers": [
+      "brolly",
+      "parasol"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-22",
+    "date": "2026-09-22",
+    "imageName": "puzzle-ramen",
+    "answer": "Ramen",
+    "acceptableAnswers": [
+      "ramen noodles",
+      "noodle soup"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-21",
+    "date": "2026-09-21",
+    "imageName": "puzzle-wolf",
+    "answer": "Wolf",
+    "acceptableAnswers": [
+      "wolves",
+      "gray wolf",
+      "grey wolf"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-20",
+    "date": "2026-09-20",
+    "imageName": "puzzle-machu-picchu",
+    "answer": "Machu Picchu",
+    "acceptableAnswers": [
+      "machu pichu",
+      "machu picu"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-19",
+    "date": "2026-09-19",
+    "imageName": "puzzle-galaxy",
+    "answer": "Galaxy",
+    "acceptableAnswers": [
+      "spiral galaxy",
+      "milky way"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-09-18",
+    "date": "2026-09-18",
+    "imageName": "puzzle-compass",
+    "answer": "Compass",
+    "acceptableAnswers": [
+      "magnetic compass",
+      "navigation compass"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-17",
+    "date": "2026-09-17",
+    "imageName": "puzzle-pretzel",
+    "answer": "Pretzel",
+    "acceptableAnswers": [
+      "pretzels",
+      "soft pretzel"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-16",
+    "date": "2026-09-16",
+    "imageName": "puzzle-elephant",
+    "answer": "Elephant",
+    "acceptableAnswers": [
+      "elephants",
+      "african elephant",
+      "asian elephant"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-15",
+    "date": "2026-09-15",
+    "imageName": "puzzle-taj-mahal",
+    "answer": "Taj Mahal",
+    "acceptableAnswers": [
+      "taj mahal india",
+      "the taj mahal"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-14",
+    "date": "2026-09-14",
+    "imageName": "puzzle-venus",
+    "answer": "Venus",
+    "acceptableAnswers": [
+      "planet venus"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-09-13",
+    "date": "2026-09-13",
+    "imageName": "puzzle-hourglass",
+    "answer": "Hourglass",
+    "acceptableAnswers": [
+      "hour glass",
+      "sand timer",
+      "egg timer"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-12",
+    "date": "2026-09-12",
+    "imageName": "puzzle-waffle",
+    "answer": "Waffle",
+    "acceptableAnswers": [
+      "waffles",
+      "belgian waffle"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-11",
+    "date": "2026-09-11",
+    "imageName": "puzzle-penguin",
+    "answer": "Penguin",
+    "acceptableAnswers": [
+      "penguins",
+      "emperor penguin"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-10",
+    "date": "2026-09-10",
+    "imageName": "puzzle-colosseum",
+    "answer": "Colosseum",
+    "acceptableAnswers": [
+      "coliseum",
+      "roman colosseum",
+      "the colosseum"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-09",
+    "date": "2026-09-09",
+    "imageName": "puzzle-neptune",
+    "answer": "Neptune",
+    "acceptableAnswers": [
+      "planet neptune"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-09-08",
+    "date": "2026-09-08",
+    "imageName": "puzzle-violin",
+    "answer": "Violin",
+    "acceptableAnswers": [
+      "fiddle",
+      "violins"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-07",
+    "date": "2026-09-07",
+    "imageName": "puzzle-donut",
+    "answer": "Donut",
+    "acceptableAnswers": [
+      "doughnut",
+      "donuts",
+      "doughnuts"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-06",
+    "date": "2026-09-06",
+    "imageName": "puzzle-owl",
+    "answer": "Owl",
+    "acceptableAnswers": [
+      "owls",
+      "barn owl",
+      "great horned owl"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-09-05",
+    "date": "2026-09-05",
+    "imageName": "puzzle-big-ben",
+    "answer": "Big Ben",
+    "acceptableAnswers": [
+      "elizabeth tower",
+      "london clock",
+      "big ben clock"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-04",
+    "date": "2026-09-04",
+    "imageName": "puzzle-telescope",
+    "answer": "Telescope",
+    "acceptableAnswers": [
+      "refracting telescope",
+      "scope"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-09-03",
+    "date": "2026-09-03",
+    "imageName": "puzzle-sushi",
+    "answer": "Sushi",
+    "acceptableAnswers": [
+      "sushi roll",
+      "maki",
+      "nigiri"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-09-02",
+    "date": "2026-09-02",
+    "imageName": "puzzle-windmill",
+    "answer": "Windmill",
+    "acceptableAnswers": [
+      "dutch windmill",
+      "mill"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-09-01",
+    "date": "2026-09-01",
+    "imageName": "puzzle-moon",
+    "answer": "Moon",
+    "acceptableAnswers": [
+      "the moon",
+      "full moon",
+      "lunar"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-08-31",
+    "date": "2026-08-31",
+    "imageName": "puzzle-typewriter",
+    "answer": "Typewriter",
+    "acceptableAnswers": [
+      "manual typewriter"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-08-30",
+    "date": "2026-08-30",
+    "imageName": "puzzle-hamburger",
+    "answer": "Hamburger",
+    "acceptableAnswers": [
+      "burger",
+      "cheeseburger"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-08-29",
+    "date": "2026-08-29",
+    "imageName": "puzzle-fox",
+    "answer": "Fox",
+    "acceptableAnswers": [
+      "red fox",
+      "foxes"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-28",
+    "date": "2026-08-28",
+    "imageName": "puzzle-mount-fuji",
+    "answer": "Mount Fuji",
+    "acceptableAnswers": [
+      "fuji",
+      "mt fuji",
+      "mt. fuji",
+      "fuji mountain"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-08-27",
+    "date": "2026-08-27",
+    "imageName": "puzzle-mars",
+    "answer": "Mars",
+    "acceptableAnswers": [
+      "planet mars",
+      "the red planet",
+      "red planet"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-08-26",
+    "date": "2026-08-26",
+    "imageName": "puzzle-guitar",
+    "answer": "Guitar",
+    "acceptableAnswers": [
+      "acoustic guitar",
+      "acoustic"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-08-25",
+    "date": "2026-08-25",
+    "imageName": "puzzle-ice-cream",
+    "answer": "Ice Cream",
+    "acceptableAnswers": [
+      "icecream",
+      "ice-cream",
+      "gelato"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-08-24",
+    "date": "2026-08-24",
+    "imageName": "puzzle-cat",
+    "answer": "Cat",
+    "acceptableAnswers": [
+      "kitten",
+      "house cat",
+      "tabby",
+      "tabby cat"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-23",
+    "date": "2026-08-23",
+    "imageName": "puzzle-golden-gate",
+    "answer": "Golden Gate Bridge",
+    "acceptableAnswers": [
+      "golden gate",
+      "the golden gate"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-08-22",
+    "date": "2026-08-22",
+    "imageName": "puzzle-comet",
+    "answer": "Comet",
+    "acceptableAnswers": [
+      "a comet",
+      "shooting star"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-08-21",
+    "date": "2026-08-21",
+    "imageName": "puzzle-camera",
+    "answer": "Camera",
+    "acceptableAnswers": [
+      "dslr",
+      "slr camera",
+      "dslr camera"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-08-20",
+    "date": "2026-08-20",
+    "imageName": "puzzle-taco",
+    "answer": "Taco",
+    "acceptableAnswers": [
+      "tacos",
+      "street taco"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-08-19",
+    "date": "2026-08-19",
+    "imageName": "puzzle-eagle",
+    "answer": "Eagle",
+    "acceptableAnswers": [
+      "bald eagle",
+      "bird of prey"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-18",
+    "date": "2026-08-18",
+    "imageName": "puzzle-pyramid",
+    "answer": "Pyramid",
+    "acceptableAnswers": [
+      "pyramids",
+      "the pyramids",
+      "giza",
+      "great pyramid"
+    ],
+    "category": "Landmarks"
+  },
+  {
     "id": "2026-08-17",
     "date": "2026-08-17",
     "imageName": "puzzle-eiffel-tower",
     "answer": "Eiffel Tower",
-    "acceptableAnswers": ["eiffel", "the eiffel tower", "tour eiffel"],
+    "acceptableAnswers": [
+      "eiffel",
+      "the eiffel tower",
+      "tour eiffel"
+    ],
     "category": "Landmarks"
   },
   {
@@ -12,7 +563,12 @@
     "date": "2026-08-16",
     "imageName": "puzzle-golden-retriever",
     "answer": "Golden Retriever",
-    "acceptableAnswers": ["retriever", "golden", "dog", "golden retriever dog"],
+    "acceptableAnswers": [
+      "retriever",
+      "golden",
+      "dog",
+      "golden retriever dog"
+    ],
     "category": "Animals"
   },
   {
@@ -20,7 +576,11 @@
     "date": "2026-08-15",
     "imageName": "puzzle-grand-piano",
     "answer": "Piano",
-    "acceptableAnswers": ["grand piano", "keyboard", "pianoforte"],
+    "acceptableAnswers": [
+      "grand piano",
+      "keyboard",
+      "pianoforte"
+    ],
     "category": "Objects"
   },
   {
@@ -28,7 +588,11 @@
     "date": "2026-08-14",
     "imageName": "puzzle-pepperoni-pizza",
     "answer": "Pizza",
-    "acceptableAnswers": ["pepperoni pizza", "pie", "pizza pie"],
+    "acceptableAnswers": [
+      "pepperoni pizza",
+      "pie",
+      "pizza pie"
+    ],
     "category": "Food"
   },
   {
@@ -36,7 +600,87 @@
     "date": "2026-08-13",
     "imageName": "puzzle-saturn",
     "answer": "Saturn",
-    "acceptableAnswers": ["planet saturn", "the planet saturn"],
+    "acceptableAnswers": [
+      "planet saturn",
+      "the planet saturn"
+    ],
     "category": "Space"
+  },
+  {
+    "id": "2026-08-12",
+    "date": "2026-08-12",
+    "imageName": "puzzle-tiger",
+    "answer": "Tiger",
+    "acceptableAnswers": [
+      "tigers",
+      "bengal tiger"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-11",
+    "date": "2026-08-11",
+    "imageName": "puzzle-statue-of-liberty",
+    "answer": "Statue of Liberty",
+    "acceptableAnswers": [
+      "liberty",
+      "lady liberty"
+    ],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-08-10",
+    "date": "2026-08-10",
+    "imageName": "puzzle-jupiter",
+    "answer": "Jupiter",
+    "acceptableAnswers": [
+      "planet jupiter"
+    ],
+    "category": "Space"
+  },
+  {
+    "id": "2026-08-09",
+    "date": "2026-08-09",
+    "imageName": "puzzle-bicycle",
+    "answer": "Bicycle",
+    "acceptableAnswers": [
+      "bike",
+      "cycle"
+    ],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-08-08",
+    "date": "2026-08-08",
+    "imageName": "puzzle-croissant",
+    "answer": "Croissant",
+    "acceptableAnswers": [
+      "croissants",
+      "french croissant"
+    ],
+    "category": "Food"
+  },
+  {
+    "id": "2026-08-07",
+    "date": "2026-08-07",
+    "imageName": "puzzle-panda",
+    "answer": "Panda",
+    "acceptableAnswers": [
+      "giant panda",
+      "pandas",
+      "panda bear"
+    ],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-06",
+    "date": "2026-08-06",
+    "imageName": "puzzle-lighthouse",
+    "answer": "Lighthouse",
+    "acceptableAnswers": [
+      "light house",
+      "the lighthouse"
+    ],
+    "category": "Landmarks"
   }
 ]

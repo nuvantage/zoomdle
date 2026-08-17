@@ -28,6 +28,15 @@ struct StreakStats: Codable, Equatable, Sendable {
         lastCompletedDay = day
     }
 
+    mutating func clearCompletion(on date: Date) {
+        let day = Puzzle.dayString(from: date)
+        guard lastCompletedDay == day else { return }
+        if current > 0 {
+            current -= 1
+        }
+        lastCompletedDay = nil
+    }
+
     private func isConsecutive(to day: String) -> Bool {
         guard
             let lastDay = lastCompletedDay,
@@ -45,6 +54,7 @@ struct StreakStats: Codable, Equatable, Sendable {
 protocol StreakStoring {
     func load() -> StreakStats
     func recordCompletion(outcome: PuzzleProgress.Outcome, on date: Date) -> StreakStats
+    func clearCompletion(on date: Date) -> StreakStats
 }
 
 @MainActor
@@ -72,6 +82,13 @@ final class UserDefaultsStreakStore: StreakStoring {
         return stats
     }
 
+    func clearCompletion(on date: Date) -> StreakStats {
+        var stats = load()
+        stats.clearCompletion(on: date)
+        save(stats)
+        return stats
+    }
+
     private func save(_ stats: StreakStats) {
         if let data = try? JSONEncoder().encode(stats) {
             defaults.set(data, forKey: key)
@@ -93,6 +110,11 @@ final class InMemoryStreakStore: StreakStoring {
 
     func recordCompletion(outcome: PuzzleProgress.Outcome, on date: Date) -> StreakStats {
         stats.applyCompletion(outcome: outcome, on: date)
+        return stats
+    }
+
+    func clearCompletion(on date: Date) -> StreakStats {
+        stats.clearCompletion(on: date)
         return stats
     }
 }
