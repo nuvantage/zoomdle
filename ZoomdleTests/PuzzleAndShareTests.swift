@@ -41,8 +41,8 @@ final class PuzzleAndShareTests: XCTestCase {
     }
 
     func testLegalURLsAreHTTPSFromInfoPlist() {
-        XCTAssertEqual(ZoomdleLegal.privacyURL?.absoluteString, "https://github.com/nuvantage/zoomdle/blob/gh-pages/PrivacyPolicy.md")
-        XCTAssertEqual(ZoomdleLegal.termsURL?.absoluteString, "https://github.com/nuvantage/zoomdle/blob/gh-pages/Terms.md")
-        XCTAssertEqual(ZoomdleLegal.supportURL?.absoluteString, "https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md")
+        XCTAssertEqual(ZoomdleLegal.privacyURL?.absoluteString, "https://nuvantage.github.io/zoomdle/privacy/")
+        XCTAssertEqual(ZoomdleLegal.termsURL?.absoluteString, "https://nuvantage.github.io/zoomdle/terms/")
+        XCTAssertEqual(ZoomdleLegal.supportURL?.absoluteString, "https://nuvantage.github.io/zoomdle/support/")
     }
 }

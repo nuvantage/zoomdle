@@ -26,4 +26,4 @@ Zoomdle is provided without warranties of any kind to the extent permitted by la
 
 ## Contact
 
-Questions: [Support](https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md)
+Questions: [Support](https://nuvantage.github.io/zoomdle/support/)

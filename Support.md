@@ -18,5 +18,5 @@ Please open a GitHub issue with the iOS version, what you tapped, and what you e
 
 ## Policies
 
-- [Privacy Policy](https://github.com/nuvantage/zoomdle/blob/gh-pages/PrivacyPolicy.md)
-- [Terms of Use](https://github.com/nuvantage/zoomdle/blob/gh-pages/Terms.md)
+- [Privacy Policy](https://nuvantage.github.io/zoomdle/privacy/)
+- [Terms of Use](https://nuvantage.github.io/zoomdle/terms/)

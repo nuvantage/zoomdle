@@ -22,4 +22,4 @@ If you subscribe to Zoomdle Plus, payment, billing, and subscription status are 
 
 ## Contact
 
-Questions about this policy: [Support](https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md)
+Questions about this policy: [Support](https://nuvantage.github.io/zoomdle/support/)

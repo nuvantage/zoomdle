@@ -9,11 +9,11 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>NSPrivacyPolicyURL</key>
-	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/PrivacyPolicy.md</string>
+	<string>https://nuvantage.github.io/zoomdle/privacy/</string>
 	<key>SupportURL</key>
-	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md</string>
+	<string>https://nuvantage.github.io/zoomdle/support/</string>
 	<key>TermsURL</key>
-	<string>https://github.com/nuvantage/zoomdle/blob/gh-pages/Terms.md</string>
+	<string>https://nuvantage.github.io/zoomdle/terms/</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>

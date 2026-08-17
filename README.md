@@ -28,11 +28,11 @@ Archive with **Product → Archive**, then distribute from Organizer to TestFlig
 
 App Store Connect also needs the same **Privacy Policy**, **Terms**, and **Support** URLs that are in Info.plist:
 
-- Privacy: https://github.com/nuvantage/zoomdle/blob/gh-pages/PrivacyPolicy.md
-- Terms: https://github.com/nuvantage/zoomdle/blob/gh-pages/Terms.md
-- Support: https://github.com/nuvantage/zoomdle/blob/gh-pages/Support.md
+- Privacy: https://nuvantage.github.io/zoomdle/privacy/
+- Terms: https://nuvantage.github.io/zoomdle/terms/
+- Support: https://nuvantage.github.io/zoomdle/support/
 
-Those pages are the HTML in `docs/` plus `PrivacyPolicy.md`, `Terms.md`, and `Support.md` on the `gh-pages` branch. To serve the HTML at `https://nuvantage.github.io/zoomdle/`, enable GitHub Pages: **Settings → Pages → Deploy from branch `gh-pages` / root**.
+Those pages are the HTML in `docs/`, served from the `gh-pages` branch. Source markdown: `PrivacyPolicy.md`, `Terms.md`, `Support.md`.
 
 ## Puzzles
 
