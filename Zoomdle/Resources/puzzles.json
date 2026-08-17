@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2026-08-17",
+    "date": "2026-08-17",
+    "imageName": "puzzle-eiffel-tower",
+    "answer": "Eiffel Tower",
+    "acceptableAnswers": ["eiffel", "the eiffel tower", "tour eiffel"],
+    "category": "Landmarks"
+  },
+  {
+    "id": "2026-08-16",
+    "date": "2026-08-16",
+    "imageName": "puzzle-golden-retriever",
+    "answer": "Golden Retriever",
+    "acceptableAnswers": ["retriever", "golden", "dog", "golden retriever dog"],
+    "category": "Animals"
+  },
+  {
+    "id": "2026-08-15",
+    "date": "2026-08-15",
+    "imageName": "puzzle-grand-piano",
+    "answer": "Piano",
+    "acceptableAnswers": ["grand piano", "keyboard", "pianoforte"],
+    "category": "Objects"
+  },
+  {
+    "id": "2026-08-14",
+    "date": "2026-08-14",
+    "imageName": "puzzle-pepperoni-pizza",
+    "answer": "Pizza",
+    "acceptableAnswers": ["pepperoni pizza", "pie", "pizza pie"],
+    "category": "Food"
+  },
+  {
+    "id": "2026-08-13",
+    "date": "2026-08-13",
+    "imageName": "puzzle-saturn",
+    "answer": "Saturn",
+    "acceptableAnswers": ["planet saturn", "the planet saturn"],
+    "category": "Space"
+  }
+]
